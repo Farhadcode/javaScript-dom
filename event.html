@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    
+</head>
+<body>
+    <h1  onclick="console.log('h1 on click')">Event add on Click</h1>
+    <!-- <button onclick="alert('Hello Baby')">Click Me</button> -->
+    
+    <button onclick="makeGray()"> color:gray</button>
+    <button id="btnGreen"> color:green</button>
+
+    <script>
+        const greenButton = document.getElementById('btnGreen');
+        greenButton.onclick = makeGreen;
+        function makeGreen(){
+            document.body.style.backgroundColor = 'green';
+        }
+       function makeGray(){
+           document.body.style.backgroundColor = 'gray';
+        //    document.h1.style.color ='red'
+       }
+    </script>
+</body>
+</html>
