@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello javaScreipt Baby</h1>
+    <header>
+        <h2> Blogs list</h2>
+        <ul id ="blos-list">
+            <li>list-1</li>
+            <li>list-2</li>
+            <li>list-3</li>
+            <li>list-4</li>
+        </ul>
+    </header>
+    <section id="section-blog">
+      <div>
+          <h2>blog-1</h2>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eligendi!</p>
+      </div>
+      <div>
+          <h2>blog-2</h2>
+          <p class="paragraph">Dolorem velit culpa ut eum magnam cum voluptatem blanditiis inventore.</p>
+      </div>
+      <div>
+          <h2 id="title-2" >blog-3</h2>
+          <p class="paragraph">Facilis tempore magni quae illum, aliquam nulla qui non dignissimos.</p>
+      </div>
+      <div>
+          <h2>blog-4</h2>
+          <p class="paragraph">Cupiditate ipsum excepturi non expedita exercitationem perferendis velit praesentium natus.</p>
+      </div>
+
+    </section>
+      <script>
+          const student = {name:'farhad',age :22 ,height:67}
+
+          const blogTitles = document.getElementsByTagName('p');
+          for( const x of blogTitles){
+              console.log(x.innerText);
+          }
+        //   console.log(blogTitles);
+          const blogHeader = document.getElementsByTagName('h2');
+          for(const header of blogHeader){
+              console.log(header.innerText);
+          }
+
+          const secondHeader = document.getElementById('title-2');
+          secondHeader.style.textAlign ='center'
+          secondHeader.innerText ="maigec mamuni"
+
+        //   const allPeragrapChang = document.getElementsByClassName("paragraph");
+          
+        //     allPeragrapChang.innerText = 'my jantuos mukta  sex you baby';
+        //   allPeragrapChang.innerText='my jantuos mukta  sex you baby'
+
+         // create and add element by using JS
+
+         // create element
+         const li = document.createElement('li');
+         li.innerText = 'list-5';
+
+         // where to add 
+
+        const ul = document.getElementById('blos-list');
+        //appent 
+        ul.appendChild(li);
+
+        // add article
+
+        const newBlog = document. createElement('div');
+        const h2 = document.createElement('h2');
+        h2.innerText = "blog-5";
+        const p = document.createElement('p');
+        p.innerText = 'hello baby, you looking hot and sexy. ';
+
+        newBlog.appendChild(h2);
+        newBlog.appendChild(p);
+
+        // parent of div
+        const blogSection = document.getElementById('section-blog');
+        blogSection.appendChild(newBlog);
+      
+         
+        
+
+      </script>
+    
+</body>
+</html>
