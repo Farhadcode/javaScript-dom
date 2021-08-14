@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegate</title>
+</head>
+<body>
+    <section>
+        <h2>Event Delegaet</h2>
+        <ul id="item-container">
+           
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Ipsum, aliquid eius.</li>
+            <li class="item">Culpa, quas incidunt.</li>
+            <li class="item">Ab, commodi molestiae.</li>
+        </ul>
+    </section>
+    <script>
+        const items = document.getElementsByClassName('item');
+        for(const item of items){
+            item.addEventListener('click',remove = () =>{
+               document.getElementById('item-container').removeChild(item);
+            });
+        }
+    </script>
+    
+</body>
+</html>
